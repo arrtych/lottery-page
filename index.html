@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body class="blink">
+
+	<div class="bounce" id="text">
+	Test your luck!
+	<br>
+	Try to get 777!
+
+	</div>
+	
+	<!-- <div class="bounce" id="text"></div> -->
+	<br>
+	<br>
+	<a href="#" class="button" id="button" onclick="return buttonHandler();">Roll</a>
+	<br>
+	<br>
+	
+	<div class="card" id="card1">0</div>
+	<div class="card" id="card2">0</div>
+	<div class="card" id="card3">0</div>
+
+	<br>
+	<br>
+
+	<div class="modal-opened hidden" id="modal-opened"></div>
+
+	<div class="modal hidden" id="regular" style="bottom:250px">
+		<h3 id="text">Sorry!</h3>
+		You lost <b>10</b> points.<br><br>
+		<a href="#" onclick="return closeHandler();">Try again</a>
+	</div>
+
+
+	<div class="modal hidden" id="rich" style="bottom:250px">
+		<h3>Congratulations!</h3>
+		You won <b>10 000</b> points.<br><br>
+		<a href="#" onclick="return closeHandler();">Try again</a>
+	</div>
+
+</body>
+</html>
